@@ -57,6 +57,15 @@ $("#submitbtn").on("click", function(event) {
 
 });
 
+
+function compareTimes() {
+  var now = new Date().format("HH:mm");
+  var calcTrainTime = trainStartTime;
+  while (moment(trainStartTime).duration().asMinutes() < moment(now).duration().asMinutes()) {
+    // Add 
+  }
+}
+
 //Add rows to the table
 function addRow(trainName, destination, frequency, nextArrival, minutesAway){
     var now = new Date();
